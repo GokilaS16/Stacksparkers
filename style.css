@@ -1,0 +1,563 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+    background: #f8faf5;
+    color: #123b31;
+}
+
+.navbar {
+    height: 78px;
+    background: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 4%;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 15px rgba(0,0,0,0.05);
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.logo-icon {
+    font-size: 38px;
+}
+
+.logo h2 {
+    color: #075c43;
+    font-size: 24px;
+}
+
+.logo span {
+    font-size: 9px;
+    color: #60736d;
+}
+
+nav {
+    display: flex;
+    gap: 32px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #24483e;
+    font-weight: 500;
+    font-size: 14px;
+    padding: 28px 0;
+}
+
+nav a:hover,
+nav a.active {
+    color: #08764f;
+    border-bottom: 3px solid #08764f;
+}
+
+.nav-right {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.nav-right button {
+    border: none;
+    background: transparent;
+    font-size: 21px;
+    cursor: pointer;
+}
+
+.profile {
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    background: #eee;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero {
+    min-height: 390px;
+    display: flex;
+    background: linear-gradient(120deg, #dff5e5, #dff6f3);
+    overflow: hidden;
+}
+
+.hero-content {
+    width: 60%;
+    padding: 55px 5%;
+    z-index: 2;
+}
+
+.small-title,
+.tag {
+    color: #13805a;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+.hero h1 {
+    font-size: 42px;
+    line-height: 1.15;
+    margin: 15px 0;
+    color: #073f32;
+}
+
+.hero h1 span {
+    display: block;
+    color: #16734e;
+}
+
+.hero p:not(.small-title) {
+    color: #365b52;
+    line-height: 1.8;
+}
+
+.hero-buttons {
+    display: flex;
+    gap: 16px;
+    margin-top: 25px;
+}
+
+.primary-btn,
+.secondary-btn {
+    padding: 13px 25px;
+    border-radius: 30px;
+    font-family: inherit;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.primary-btn {
+    background: #08784f;
+    color: white;
+    border: none;
+}
+
+.primary-btn:hover {
+    background: #055c3d;
+    transform: translateY(-2px);
+}
+
+.secondary-btn {
+    background: white;
+    color: #08784f;
+    border: 2px solid #08784f;
+}
+
+.secondary-btn:hover {
+    background: #08784f;
+    color: white;
+}
+
+.hero-image {
+    width: 40%;
+    position: relative;
+    background: linear-gradient(#c9f0f1 45%, #a9d86c 46%);
+    min-height: 390px;
+}
+
+.sun {
+    position: absolute;
+    width: 80px;
+    height: 80px;
+    background: #ffd76a;
+    border-radius: 50%;
+    top: 35px;
+    right: 70px;
+}
+
+.field {
+    position: absolute;
+    bottom: 35px;
+    left: 30px;
+    font-size: 100px;
+}
+
+.people {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    font-size: 80px;
+    letter-spacing: -20px;
+}
+
+.house {
+    position: absolute;
+    bottom: 50px;
+    left: 45%;
+    font-size: 65px;
+}
+
+.section {
+    padding: 45px 4%;
+}
+
+.section-heading {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 22px;
+}
+
+.section-heading h2 {
+    font-size: 25px;
+    margin-top: 5px;
+}
+
+.view-btn {
+    border: none;
+    background: transparent;
+    color: #08784f;
+    font-weight: 700;
+    cursor: pointer;
+}
+.service-grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 18px;
+}
+
+.service-card {
+    padding: 25px 15px;
+    min-height: 175px;
+    text-align: center;
+    border-radius: 14px;
+    cursor: pointer;
+    transition: 0.3s;
+    border: 1px solid transparent;
+}
+
+.service-card:hover {
+    transform: translateY(-7px);
+    box-shadow: 0 12px 25px rgba(0,0,0,0.08);
+    border-color: #b7d9c8;
+}
+
+.farm {
+    background: #e7f7e6;
+}
+
+.home-service {
+    background: #fff0e4;
+}
+
+.repair {
+    background: #eee7ff;
+}
+
+.community {
+    background: #e6f2ff;
+}
+
+.delivery {
+    background: #ffe9ea;
+}
+
+.service-icon {
+    width: 55px;
+    height: 55px;
+    margin: auto auto 15px;
+    border-radius: 50%;
+    background: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 28px;
+}
+
+.service-card h3 {
+    font-size: 15px;
+    margin-bottom: 8px;
+}
+
+.service-card p {
+    font-size: 11px;
+    color: #61716d;
+}
+
+
+.jobs-section {
+    background: #eff9f0;
+}
+
+.jobs-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 18px;
+}
+
+.job-card {
+    background: white;
+    padding: 10px;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.06);
+    overflow: hidden;
+}
+
+.job-image {
+    height: 120px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 55px;
+}
+
+.farm-img {
+    background: #d7edb8;
+}
+
+.home-img {
+    background: #f4ddd0;
+}
+
+.repair-img {
+    background: #ddd9f4;
+}
+
+.delivery-img {
+    background: #d8edf5;
+}
+
+.job-card h3 {
+    margin: 12px 5px 4px;
+    font-size: 14px;
+}
+
+.job-card p {
+    margin: 0 5px;
+    color: #75837f;
+    font-size: 11px;
+}
+
+.job-info {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 5px;
+    font-size: 11px;
+}
+
+.job-info b {
+    color: #08784f;
+}
+
+.job-card button,
+.worker button {
+    width: 100%;
+    border: none;
+    background: #08784f;
+    color: white;
+    padding: 10px;
+    border-radius: 20px;
+    cursor: pointer;
+    font-family: inherit;
+    font-weight: 600;
+}
+
+.job-card button:hover,
+.worker button:hover {
+    background: #055d3e;
+}
+
+
+.workers-section {
+    background: white;
+}
+
+.workers-box {
+    max-width: 850px;
+    margin: auto;
+}
+
+.worker {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    padding: 15px 0;
+    border-bottom: 1px solid #e7ece9;
+}
+
+.avatar {
+    width: 58px;
+    height: 58px;
+    border-radius: 50%;
+    background: #e7eee8;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 32px;
+}
+
+.worker-details {
+    flex: 1;
+}
+
+.worker-details h3 {
+    font-size: 15px;
+}
+
+.worker-details p {
+    font-size: 11px;
+    color: #ed9b00;
+}
+
+.worker-details span,
+.worker-details small {
+    display: block;
+    font-size: 11px;
+    color: #65756f;
+    margin-top: 3px;
+}
+
+.worker button {
+    width: 80px;
+}
+.help-section {
+    margin: 30px 4%;
+    padding: 35px 45px;
+    border-radius: 20px;
+    background: linear-gradient(110deg, #e1f5dc, #eef8dc);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.help-section h2 {
+    font-size: 27px;
+    margin: 8px 0;
+}
+
+.help-section p:not(.tag) {
+    color: #60736c;
+    margin-bottom: 18px;
+}
+
+.help-image {
+    font-size: 65px;
+    text-align: center;
+}
+footer {
+    background: #064b38;
+    color: white;
+    padding: 30px 5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-logo {
+    font-size: 22px;
+}
+
+.footer-logo p {
+    font-size: 10px;
+    color: #b9d4ca;
+}
+
+.footer-links {
+    display: flex;
+    gap: 25px;
+}
+
+.footer-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 13px;
+}
+
+.footer-social {
+    display: flex;
+    gap: 15px;
+}
+
+.footer-social span {
+    cursor: pointer;
+}
+
+@media (max-width: 1000px) {
+
+    nav {
+        display: none;
+    }
+
+    .service-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .jobs-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .hero h1 {
+        font-size: 32px;
+    }
+
+}
+
+@media (max-width: 650px) {
+
+    .navbar {
+        padding: 0 15px;
+    }
+
+    .nav-right > span {
+        display: none;
+    }
+
+    .hero {
+        flex-direction: column;
+    }
+
+    .hero-content,
+    .hero-image {
+        width: 100%;
+    }
+
+    .hero-content {
+        padding: 40px 25px;
+    }
+
+    .hero h1 {
+        font-size: 28px;
+    }
+
+    .hero-image {
+        min-height: 220px;
+    }
+
+    .service-grid,
+    .jobs-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .help-section {
+        margin: 20px;
+        padding: 25px;
+        flex-direction: column;
+        text-align: center;
+        gap: 20px;
+    }
+
+    footer {
+        flex-direction: column;
+        gap: 20px;
+        text-align: center;
+    }
+
+}
